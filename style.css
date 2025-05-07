@@ -134,6 +134,48 @@ nav a:hover {
     transform: scale(1.1);
 }
 
+.education-section {
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+.education-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.education-entry {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.documents {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.document {
+  text-align: center;
+}
+
+.document img {
+  width: 200px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+
 /* Skills Section */
 .skills-section {
     padding: 60px 20px;
