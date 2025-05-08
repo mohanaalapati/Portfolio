@@ -144,35 +144,26 @@ nav a:hover {
   margin-bottom: 2rem;
 }
 
-.education-container {
+.education-block {
   display: flex;
-  flex-direction: column;
+  align-items: flex-start;
   gap: 2rem;
-}
-
-.education-entry {
-  background-color: #fff;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.documents {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
+  margin-bottom: 2.5rem;
   flex-wrap: wrap;
 }
 
-.document {
-  text-align: center;
+.education-block .image-container img {
+  width: 250px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
 }
 
-.document img {
-  width: 200px;
-  height: auto;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+.education-block .text-container {
+  max-width: 600px;
+}
+
+.education-block .text-container h3 {
+  margin-bottom: 0.5rem;
 }
 
 
