@@ -590,3 +590,20 @@ form button:hover {
 .footer .heart {
     color: red;
 }
+
+/* ==============================
+   FIX: Ensure toggle & modal are clickable
+============================== */
+
+.modal {
+    z-index: 2000 !important; /* Ensures modal overlays everything */
+}
+
+.theme-toggle {
+    position: relative;
+    z-index: 2001 !important; /* Ensures toggle stays above nav */
+}
+
+nav {
+    z-index: 1500 !important; /* Allows modals to go above nav */
+}
