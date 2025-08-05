@@ -25,12 +25,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // ============================
-    // Theme Toggle Functionality
+    // Theme Toggle Functionality (Fixed)
     // ============================
     if (themeToggle) {
+        // Retrieve theme state from localStorage
         const savedTheme = localStorage.getItem("theme");
 
-        if (savedTheme === "light-theme") {
+        if (savedTheme === "light") {
             document.body.classList.add("light-theme");
             themeToggle.textContent = "🌙 Dark Mode";
         } else {
@@ -38,14 +39,17 @@ document.addEventListener("DOMContentLoaded", () => {
             themeToggle.textContent = "☀️ Light Mode";
         }
 
+        // Toggle theme on button click
         themeToggle.addEventListener("click", () => {
             if (document.body.classList.contains("light-theme")) {
+                // Switch to Dark Mode
                 document.body.classList.remove("light-theme");
-                localStorage.setItem("theme", "dark-theme");
+                localStorage.setItem("theme", "dark");
                 themeToggle.textContent = "☀️ Light Mode";
             } else {
+                // Switch to Light Mode
                 document.body.classList.add("light-theme");
-                localStorage.setItem("theme", "light-theme");
+                localStorage.setItem("theme", "light");
                 themeToggle.textContent = "🌙 Dark Mode";
             }
         });
@@ -75,9 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
         button.addEventListener("click", () => {
             const modalId = button.getAttribute("data-modal");
             const modal = document.getElementById(modalId);
-            if (modal) {
-                modal.style.display = "flex";
-            }
+            if (modal) modal.style.display = "flex";
         });
     });
 
@@ -91,18 +93,14 @@ document.addEventListener("DOMContentLoaded", () => {
     // Close modal on outside click
     window.addEventListener("click", (e) => {
         modals.forEach(modal => {
-            if (e.target === modal) {
-                modal.style.display = "none";
-            }
+            if (e.target === modal) modal.style.display = "none";
         });
     });
 
-    // Optional: ESC key closes modal
+    // Close modal with ESC key
     window.addEventListener("keydown", (e) => {
         if (e.key === "Escape") {
-            modals.forEach(modal => {
-                modal.style.display = "none";
-            });
+            modals.forEach(modal => modal.style.display = "none");
         }
     });
 });
