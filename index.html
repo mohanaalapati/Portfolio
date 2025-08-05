@@ -14,6 +14,7 @@
       <a href="#About">About</a>
       <a href="#Education">Education</a>
       <a href="#Skills">Skills</a>
+      <a href="#Experience">Experience</a>
       <a href="#Works">Works</a>
       <a href="#Certifications">Certifications</a>
       <a href="#Connect">Connect</a>
@@ -159,6 +160,83 @@
     </div>
   </div>
 </section>
+
+     <!-- Experience Section -->
+    <section class="experience-section" id="Experience">
+      <h2>Explore My <span class="highlight">Experience</span></h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Data Coordinator</h3>
+            <p class="company">Western Michigan University</p>
+            <p class="duration">Jun 2025 – Present</p>
+            <button onclick="openModal('modal1')" class="details-button">View Details</button>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Facilities Data Manager</h3>
+            <p class="company">Western Michigan University</p>
+            <p class="duration">Jun 2023 – May 2025</p>
+            <button onclick="openModal('modal2')" class="details-button">View Details</button>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Data Engineer</h3>
+            <p class="company">Netxcell, India</p>
+            <p class="duration">Jan 2020 – Oct 2022</p>
+            <button onclick="openModal('modal3')" class="details-button">View Details</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h3>Data Coordinator – WMU</h3>
+        <p><strong>Role Overview:</strong> Led data initiatives to improve space utilization and operational planning.</p>
+        <ul>
+          <li>Analyzed 10K+ traffic logs to uncover usage trends, increasing utilization by 18%.</li>
+          <li>Developed automated Power BI dashboards, saving 6+ hours weekly.</li>
+          <li>Delivered data insights for FY2026 budget decisions.</li>
+        </ul>
+        <p><strong>Skills Used:</strong> Power BI, SQL, Excel, Event Analytics</p>
+      </div>
+    </div>
+
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h3>Facilities Data Manager – WMU</h3>
+        <p><strong>Role Overview:</strong> Optimized revenue, room usage, and A/V services for university facilities.</p>
+        <ul>
+          <li>Audited $2M revenue, identified gaps, boosting income by 12%.</li>
+          <li>Built dashboards for 150+ rooms reducing idle time by 25%.</li>
+          <li>Managed A/V logistics with 95% SLA success.</li>
+        </ul>
+        <p><strong>Skills Used:</strong> Power BI, Excel, SQL, SLA Reporting</p>
+      </div>
+    </div>
+
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h3>Data Engineer – Netxcell</h3>
+        <p><strong>Role Overview:</strong> Built scalable pipelines and automated reporting for telecom clients.</p>
+        <ul>
+          <li>Optimized 20TB SQL pipelines, improving performance by 30%.</li>
+          <li>Developed Tableau KPI dashboards cutting reporting cycles by 40%.</li>
+          <li>Collaborated with engineering teams to deploy enterprise data solutions.</li>
+        </ul>
+        <p><strong>Skills Used:</strong> SQL, Tableau, Apache Spark, ETL Development</p>
+      </div>
+    </div>
 
     <!-- Works Section -->
     <section class="works-section" id="Works">
@@ -323,6 +401,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
