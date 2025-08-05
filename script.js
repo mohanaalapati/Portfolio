@@ -49,32 +49,31 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Modal Functionality for Experience Section
-    const detailButtons = document.querySelectorAll(".details-button");
-    const modals = document.querySelectorAll(".modal");
-    const closeButtons = document.querySelectorAll(".close");
+ // Modal Functionality for Experience Section
+const detailButtons = document.querySelectorAll(".details-button");
+const modals = document.querySelectorAll(".modal");
+const closeButtons = document.querySelectorAll(".close");
 
-    detailButtons.forEach(button => {
-        button.addEventListener("click", () => {
-            const modalId = button.getAttribute("data-modal");
-            const modal = document.getElementById(modalId);
-            if (modal) {
-                modal.style.display = "flex";
-            }
-        });
+detailButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const modalId = button.getAttribute("data-modal");
+        const modal = document.getElementById(modalId);
+        if (modal) {
+            modal.style.display = "flex";
+        }
     });
+});
 
-    closeButtons.forEach(close => {
-        close.addEventListener("click", () => {
-            close.closest(".modal").style.display = "none";
-        });
+closeButtons.forEach(close => {
+    close.addEventListener("click", () => {
+        close.closest(".modal").style.display = "none";
     });
+});
 
-    window.addEventListener("click", (e) => {
-        modals.forEach(modal => {
-            if (e.target === modal) {
-                modal.style.display = "none";
-            }
-        });
+window.addEventListener("click", (e) => {
+    modals.forEach(modal => {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
     });
 });
