@@ -96,44 +96,73 @@ nav a:hover {
    HERO SECTION
 ============================== */
 .hero {
-    background-image: url('background.jpg');
-    background-size: cover;
-    background-position: center;
+    background: url('background.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 120px 20px;
     color: var(--text-color);
+    height: 100vh;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 700px;
 }
 
 .hero h1 {
-    font-size: 48px;
-    margin: 0;
+    font-size: 3rem;
+    margin-bottom: 15px;
 }
 
-.hero p {
-    font-size: 18px;
-    margin-top: 10px;
+.hero .highlight {
+    color: var(--accent-color);
 }
 
-.hire-me-button-container {
+.hero .tagline {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: var(--secondary-text);
+}
+
+.hero .intro {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.hero-buttons {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    gap: 20px;
 }
 
-.hire-me-button {
-    background-color: var(--text-color);
-    color: var(--bg-color);
+.btn-primary, .btn-secondary {
     padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+    border-radius: 6px;
     text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
 }
 
-.hire-me-button:hover {
-    background-color: var(--secondary-text);
+.btn-primary {
+    background: var(--accent-color);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #1a36d8;
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+}
+
+.btn-secondary:hover {
+    background: var(--text-color);
     color: var(--bg-color);
 }
 
