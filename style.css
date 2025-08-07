@@ -212,40 +212,70 @@ nav a:hover {
 /* ==============================
    EDUCATION SECTION
 ============================== */
-.education-section {
-    padding: 60px 20px;
-    text-align: center;
+/* Education Section */
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
 }
 
-.card-container {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
+.education-card {
+  background: #fdfdfd;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  padding: 1.8rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.card {
-    background-color: var(--card-bg);
-    border-radius: 15px;
-    overflow: hidden;
-    width: 300px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-    transition: background 0.4s ease;
+.education-logo img {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+  border-radius: 8px;
 }
 
-.card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
+.education-content {
+  flex: 1;
+  padding: 0 1.5rem;
+  min-width: 280px;
 }
 
-.card-content {
-    padding: 1rem;
-    text-align: left;
+.education-content h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: #1f1f1f;
 }
 
-.card-content h3 {
-    margin-bottom: 0.5rem;
+.education-duration,
+.education-institute {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 0.25rem;
+}
+
+.education-description {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+.education-extra {
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #3b3f45;
+  color: #fff;
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ==============================
